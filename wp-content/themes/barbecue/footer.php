@@ -11,6 +11,42 @@
 ?>
 
 <?php wp_footer(); ?>
+<section class="about wow animate__animated animate__fadeInUp">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-lg-6">
+                <div class="about__box about__box--left">
+                    <img src="<?php bloginfo('template_directory'); ?>/assets/img/Rectangle_small.png" alt="">
+                    <h3>About us</h3>
+                </div>
+                <p class="about__text">At Tim's Barbecue, we take great pride in providing only the best meats
+                    available. Tim's Barbecue brings you the best of Texas style “Craft Barbecue." Chef/Owner, Tim
+                    Smith describes Craft Barbecue as follows, " The meat is slow smoked for many hours with real
+                    wood on our custom built smoker. We take no short cuts here, offering the best top quality Angus
+                    beef and pork products."</p>
+            </div>
+            <div class="col-sm-12 col-lg-4">
+                <div class="about__box about__box--right">
+                    <img src="<?php bloginfo('template_directory'); ?>/assets/img/Rectangle_small.png" alt="">
+                    <h3>Where to find us</h3>
+                </div>
+                <div class="about__info">
+                    <img src="<?php bloginfo('template_directory'); ?>/assets/img/icon_.png" alt="">
+                    <p>Richboro Beer & Soda</p>
+                </div>
+                <div class="about__info">
+                    <img src="<?php bloginfo('template_directory'); ?>/assets/img/icon_1.png" alt="">
+                    <p>Saturday – 4-7PM</p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-2">
+                <div class="about__house">
+                    <img src="<?php bloginfo('template_directory'); ?>/assets/img/dom.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <footer class="footer">
     <div class="container">
         <div class="row">
