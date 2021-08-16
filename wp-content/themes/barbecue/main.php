@@ -147,72 +147,69 @@ get_header();
                 <div class="blackBanner__content">
                     <div class="blackBanner__content__item">
                         <div class="blackBanner__content__item__wrapper">
-                            <p class="blackBanner__content__item__wrapper_title">2 Meats</p>
-                            <p class="blackBanner__content__item__wrapper_title">3 Sides</p>
+                            <p class="blackBanner__content__item__wrapper_title"><?= get_field('meats1') ?></p>
+                            <p class="blackBanner__content__item__wrapper_title"><?= get_field('sides1') ?></p>
                         </div>
                         <span class="blackBanner__content__item__img-wrapper">
               <img class="blackBanner__content__item__img-wrapper__for-price"
                    src="<?php bloginfo('template_directory'); ?>/assets/img/meetWrapperPrice.png"
                    alt="meetWrapper">
               <p class="blackBanner__content__item__img-wrapper__price">
-                  $16.95
+                  <?= get_field('cost1') ?>
               </p>
           </span>
                     </div>
                     <div class="blackBanner__content__item">
                         <div class="blackBanner__content__item__wrapper">
-                            <p class="blackBanner__content__item__wrapper_title">2 Meats</p>
-                            <p class="blackBanner__content__item__wrapper_title">3 Sides</p>
+                            <p class="blackBanner__content__item__wrapper_title"><?= get_field('meats2') ?></p>
+                            <p class="blackBanner__content__item__wrapper_title"><?= get_field('sides2') ?></p>
                         </div>
                         <span class="blackBanner__content__item__img-wrapper">
               <img class="blackBanner__content__item__img-wrapper__for-price"
                    src="<?php bloginfo('template_directory'); ?>/assets/img/meetWrapperPrice.png"
                    alt="meetWrapper">
               <p class="blackBanner__content__item__img-wrapper__price">
-                  $19.95
+                  <?= get_field('cost2') ?>
               </p>
           </span>
                     </div>
                 </div>
                 <p class="blackBanner__description">
-                    A $60.00 catering fee includes thermal packaging, disposable cutlery, napkins, serving utensils and
-                    sterno. There is an additional charge of $0.50 per mile (round trip) for delivery and setup.
-                <h4 class="blackBanner__description-hint">Minimum order of $250.00</h4></p>
-                <p class="blackBanner__header-red">ON SITE ** ON SITE ** ON SITE ** ON SITE ** ON SITE **</p>
+                    <?= get_field('free_package') ?>
+                <h4 class="blackBanner__description-hint"><?= get_field('min_order') ?></h4></p>
+                <p class="blackBanner__header-red"><?= get_field('redline2') ?></p>
                 <div class="blackBanner__content">
                     <div class="blackBanner__content__item">
                         <div class="blackBanner__content__item__wrapper">
-                            <p class="blackBanner__content__item__wrapper_title">2 Meats</p>
-                            <p class="blackBanner__content__item__wrapper_title">3 Sides</p>
+                            <p class="blackBanner__content__item__wrapper_title"><?= get_field('meats3') ?></p>
+                            <p class="blackBanner__content__item__wrapper_title"><?= get_field('sides3') ?></p>
                         </div>
                         <span class="blackBanner__content__item__img-wrapper">
               <img class="blackBanner__content__item__img-wrapper__for-price"
                    src="<?php bloginfo('template_directory'); ?>/assets/img/meetWrapperPrice.png"
                    alt="meetWrapper">
               <p class="blackBanner__content__item__img-wrapper__price">
-                  $16.95
+                  <?= get_field('cost3') ?>
               </p>
           </span>
                     </div>
                     <div class="blackBanner__content__item">
                         <div class="blackBanner__content__item__wrapper">
-                            <p class="blackBanner__content__item__wrapper_title">2 Meats</p>
-                            <p class="blackBanner__content__item__wrapper_title">3 Sides</p>
+                            <p class="blackBanner__content__item__wrapper_title"><?= get_field('meats4') ?></p>
+                            <p class="blackBanner__content__item__wrapper_title"><?= get_field('sides4') ?></p>
                         </div>
                         <span class="blackBanner__content__item__img-wrapper">
               <img class="blackBanner__content__item__img-wrapper__for-price"
                    src="<?php bloginfo('template_directory'); ?>/assets/img/meetWrapperPrice.png"
                    alt="meetWrapper">
               <p class="blackBanner__content__item__img-wrapper__price">
-                  $19.95
+                  <?= get_field('cost4') ?>
               </p>
           </span>
                     </div>
                 </div>
                 <p class="blackBanner__description">
-                    Includes our 10’x10′ custom tent set up, tables and coverings, pro chafer, sterno, cutlery, napkins,
-                    rolls and sauces. This is a buffet style set up including a 2 hour service (not including set up and
-                    breakdown).
+                    <?= get_field('compaction') ?>
                 </p>
             </div>
         </section>
@@ -225,30 +222,77 @@ get_header();
                 <div class="row">
                     <div class="col-12 col-sm-12">
                         <div class="cards__title">
-                            <h3>These Catering Packages Are Based<br>
-                                On <span>A Minimum of 50 Guests</span></h3>
-                            <p>Includes our BBQ Trailer. This option is ideal as it opens up your menu to all of our<br>
-                                offerings and live cooking. It also comes with the aroma of our smoker. In the
-                                unfortunate<br>
-                                circumstance of rain, we have you covered there.</p>
+                            <h3><?= get_field('card_title_black'); ?><span> <?= get_field('card_title_red'); ?></span></h3>
+                            <p><?= get_field('card_description'); ?></p>
                         </div>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-12 col-md-4">
+                    <div class="col-12 col-md-12 col-lg-4">
                         <div class="cards__image">
-                            <img src="<?php bloginfo('template_directory'); ?>/assets/img/card_1.png" alt="">
+                            <div class="cards__image-box">
+                                <div class="cards__image-title">
+                                    <h2><?= get_field('card1_title'); ?></h2>
+                                </div>
+
+                                <div class="cards__box-img">
+                                    <img src="<?php bloginfo('template_directory'); ?>/assets/img/cards_image_img.png" alt="meats">
+                                    <div class="cards__box-text">
+                                        <p><?= get_field('card1_meats'); ?></p>
+                                        <p><?= get_field('card1_sides'); ?></p>
+                                    </div>
+                                </div>
+
+                                <div class="cards__box-price">
+                                    <p><?= get_field('card1_price'); ?></p>
+                                    <p><?= get_field('card1_guests'); ?></p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4">
+                    <div class="col-12 col-md-12 col-lg-4">
                         <div class="cards__image">
-                            <img src="<?php bloginfo('template_directory'); ?>/assets/img/card_2.png" alt="">
+                            <div class="cards__image-box">
+                                <div class="cards__image-title">
+                                    <h2><?= get_field('card2_title'); ?></h2>
+                                </div>
+
+                                <div class="cards__box-img">
+                                    <img src="<?php bloginfo('template_directory'); ?>/assets/img/cards_image_img.png" alt="meats">
+                                    <div class="cards__box-text">
+                                        <p><?= get_field('card2_meats'); ?></p>
+                                        <p><?= get_field('card2_sides'); ?></p>
+                                    </div>
+                                </div>
+
+                                <div class="cards__box-price">
+                                    <p><?= get_field('card2_price'); ?></p>
+                                    <p><?= get_field('card2_guests'); ?></p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4">
+                    <div class="col-12 col-md-12 col-lg-4">
                         <div class="cards__image">
-                            <img src="<?php bloginfo('template_directory'); ?>/assets/img/card_3.png" alt="">
+                            <div class="cards__image-box">
+                                <div class="cards__image-title">
+                                    <h2><?= get_field('card3_title'); ?></h2>
+                                </div>
+
+                                <div class="cards__box-img">
+                                    <img src="<?php bloginfo('template_directory'); ?>/assets/img/cards_image_img.png" alt="meats">
+                                    <div class="cards__box-text">
+                                        <p><?= get_field('card3_meats'); ?></p>
+                                        <p><?= get_field('card3_sides'); ?></p>
+                                    </div>
+                                </div>
+
+                                <div class="cards__box-price">
+                                    <p><?= get_field('card3_price'); ?></p>
+                                    <p><?= get_field('card3_guests'); ?></p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -261,17 +305,11 @@ get_header();
                                 <h4>MEATS</h4>
                             </div>
                             <div class="cards__meats__text">
-                                <p>Prime Grade Beef Brisket<br>
-                                    – $2 Upcharge
-                                </p>
-                                <p>Prime Grade House Brined Pastrami<br>
-                                    – $2 Upcharge</p>
+                                <p><?= get_field('upcharge1'); ?></p>
+                                <p><?= get_field('upcharge2'); ?></p>
                             </div>
                             <ul class="cards__meats__list">
-                                <li>Pork Shoulder</li>
-                                <li>Pork Spare Ribs</li>
-                                <li>Pork Belly Burnt Ends</li>
-                                <li>Smoked Turkey Breast</li>
+                                <?= get_field('meats_red_list'); ?>
                             </ul>
                         </div>
                     </div>
@@ -282,13 +320,7 @@ get_header();
                                 <h4>SIDES</h4>
                             </div>
                             <ul class="cards__sides-list">
-                                <li>Mac N’ Cheese</li>
-                                <li>Slaw</li>
-                                <li>BBQ Baked Beans</li>
-                                <li>Pasta Salad w/Basil and Fresh<br>
-                                    Mozzarella
-                                </li>
-                                <li>Potato Salad</li>
+                                <?= get_field('sides_red_list'); ?>
                             </ul>
                         </div>
                     </div>
@@ -297,16 +329,12 @@ get_header();
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="cards__discounts">
-                            <div class="cards__discounts-box">Discounts Apply For Events Of 150 Guests Or More. Contact
-                                Us
-                                Using The Link Below For More Details.
-                            </div>
+                            <div class="cards__discounts-box"><?= get_field('black_discount'); ?></div>
                             <div class="cards__discounts-text">
-                                <p><span>*</span>Tax and gratuity not included</p>
-                                <p><span>**</span> $150.00 On Site Service Charge</p>
-                                <p><span>***</span> $300.00 On Site Service Charge With BBQ Trailer</p>
-                                <p>^ Up Charge on meats cooked on site include: Prime Grade NY Strip Steak,<br>
-                                    Prime Grade Prime Rib Roast, Salmon Filet, Prime Brisket Cheese Burgers, Hot Dogs
+                                <p><span>*</span><?= get_field('star1'); ?></p>
+                                <p><span>**</span><?= get_field('star2'); ?></p>
+                                <p><span>***</span> <?= get_field('star3'); ?></p>
+                                <p>^ <?= get_field('up_charge'); ?>
                                 </p>
                             </div>
                         </div>
@@ -335,24 +363,24 @@ get_header();
                         </div>
                         <div class="menu__list-box">
                             <div class="menu__list-item">
-                                <p>Prime Grade Beef Brisket</p>
-                                <p>$27</p>
+                                <p><?= get_field('trailer_menu_meats_name1'); ?></p>
+                                <p><?= get_field('trailer_menu_meats_price1'); ?></p>
                             </div>
                             <div class="menu__list-item">
-                                <p>Pork Spare Ribs</p>
-                                <p>$20</p>
+                                <p><?= get_field('trailer_menu_meats_name2'); ?></p>
+                                <p><?= get_field('trailer_menu_meats_price2'); ?></p>
                             </div>
                             <div class="menu__list-item">
-                                <p>Pulled Pork Shoulders</p>
-                                <p>$19</p>
+                                <p><?= get_field('trailer_menu_meats_name3'); ?></p>
+                                <p><?= get_field('trailer_menu_meats_price3'); ?></p>
                             </div>
                             <div class="menu__list-item">
-                                <p>Pork Belly Burnt Ends</p>
-                                <p>$209</p>
+                                <p><?= get_field('trailer_menu_meats_name4'); ?></p>
+                                <p><?= get_field('trailer_menu_meats_price4'); ?></p>
                             </div>
                             <div class="menu__list-item">
-                                <p>Smoked Turkey Breasts<br>(when available)</p>
-                                <p>$20</p>
+                                <p><?= get_field('trailer_menu_meats_name5'); ?></p>
+                                <p><?= get_field('trailer_menu_meats_price5'); ?></p>
                             </div>
                         </div>
 
@@ -370,20 +398,20 @@ get_header();
                         </div>
                         <div class="menu__list-box">
                             <div class="menu__list-item">
-                                <p>Texas Brisket w/<br> Pickles and Onions</p>
-                                <p>$12</p>
+                                <p><?= get_field('trailer_menu_sandwiches_name1'); ?></p>
+                                <p><?= get_field('trailer_menu_sandwiches_price1'); ?></p>
                             </div>
                             <div class="menu__list-item">
-                                <p>Carolina Pulled Pork w/<br> Pickles and Onions</p>
-                                <p>$10</p>
+                                <p><?= get_field('trailer_menu_sandwiches_name2'); ?></p>
+                                <p><?= get_field('trailer_menu_sandwiches_price2'); ?></p>
                             </div>
                             <div class="menu__list-item">
-                                <p>Smitty Brisket Cheesesteak</p>
-                                <p>$13</p>
+                                <p><?= get_field('trailer_menu_sandwiches_name3'); ?></p>
+                                <p><?= get_field('trailer_menu_sandwiches_price3'); ?></p>
                             </div>
                             <div class="menu__list-item">
-                                <p>Add any Small Size Side and a Beverage</p>
-                                <p>$4</p>
+                                <p><?= get_field('trailer_menu_sandwiches_name4'); ?></p>
+                                <p><?= get_field('trailer_menu_sandwiches_price4'); ?></p>
                             </div>
                         </div>
 
@@ -401,28 +429,26 @@ get_header();
                         </div>
                         <div class="menu__list-box">
                             <div class="menu__list-item">
-                                <p>* Prime Grade Brisket</p>
-                                <p>$19</p>
+                                <p><?= get_field('trailer_menu_plates_name1'); ?></p>
+                                <p><?= get_field('trailer_menu_plates_price1'); ?></p>
                             </div>
                             <div class="menu__list-item">
-                                <p>* Pork Spare Ribs</p>
-                                <p>$18</p>
+                                <p><?= get_field('trailer_menu_plates_name2'); ?></p>
+                                <p><?= get_field('trailer_menu_plates_price2'); ?></p>
                             </div>
                             <div class="menu__list-item">
-                                <p>* Pulled Pork Shoulder</p>
-                                <p>$17</p>
+                                <p><?= get_field('trailer_menu_plates_name3'); ?></p>
+                                <p><?= get_field('trailer_menu_plates_price3'); ?></p>
                             </div>
                             <div class="menu__list-item">
-                   <span>* Includes a Half Pound of Meat and<br>
-                     2 Small Sides</span>
+                   <span><?= get_field('include1'); ?></span>
                             </div>
                             <div class="menu__list-item">
-                                <p>BBQ Sampler Plate</p>
-                                <p>$23</p>
+                                <p><?= get_field('trailer_menu_plates_name4'); ?></p>
+                                <p><?= get_field('trailer_menu_plates_price4'); ?></p>
                             </div>
                             <div class="menu__list-item">
-                   <span>** Includes a Quarter Pound of Each<br>
-                     Meat and 2 Small Sides</span>
+                   <span><?= get_field('include2'); ?></span>
                             </div>
                         </div>
 
@@ -440,16 +466,16 @@ get_header();
                         </div>
                         <div class="menu__list-box">
                             <div class="menu__list-item list__item-block">
-                                <p>Mac N’ Cheese.....</p>
-                                <p>8 Oz. $6 / 12 Oz. $9 / 32 Oz. $13</p>
+                                <p><?= get_field('trailer_menu_sides_name1'); ?></p>
+                                <p><?= get_field('trailer_menu_sides_price1'); ?></p>
                             </div>
                             <div class="menu__list-item list__item-block">
-                                <p>Cole Slaw……</p>
-                                <p>8 Oz. $4 / 12 Oz. $6 / 32 Oz. $10</p>
+                                <p><?= get_field('trailer_menu_sides_name2'); ?></p>
+                                <p><?= get_field('trailer_menu_sides_price2'); ?></p>
                             </div>
                             <div class="menu__list-item list__item-block">
-                                <p>BBQ Baked Beans…..</p>
-                                <p>8 Oz. $4 / 12 Oz. $6 / 32 Oz. $10</p>
+                                <p><?= get_field('trailer_menu_sides_name3'); ?></p>
+                                <p><?= get_field('trailer_menu_sides_price3'); ?></p>
                             </div>
                         </div>
                     </div>
@@ -468,16 +494,16 @@ get_header();
                         </div>
                         <div class="menu__list-box">
                             <div class="menu__list-item">
-                                <p>Homemade Sweet Tea</p>
-                                <p>$2</p>
+                                <p><?= get_field('trailer_menu_beverages_name1'); ?></p>
+                                <p><?= get_field('trailer_menu_beverages_price1'); ?></p>
                             </div>
                             <div class="menu__list-item">
-                                <p>Soda</p>
-                                <p>$1</p>
+                                <p><?= get_field('trailer_menu_beverages_name2'); ?></p>
+                                <p><?= get_field('trailer_menu_beverages_price2'); ?></p>
                             </div>
                             <div class="menu__list-item">
-                                <p>Bottled Water</p>
-                                <p>$1</p>
+                                <p><?= get_field('trailer_menu_beverages_name3'); ?></p>
+                                <p><?= get_field('trailer_menu_beverages_price3'); ?></p>
                             </div>
                         </div>
 
@@ -496,21 +522,17 @@ get_header();
                         <h2>FAMILY PACKS</h2>
 
                         <div class="pre-orders__title">
-                            <h3>Our Family Meal</h3>
+                            <h3><?= get_field('pack_title1'); ?></h3>
                             <img src="<?php bloginfo('template_directory'); ?>/assets/img/order_6.png" alt="">
                         </div>
                         <div class="pre-orders__text orders__text">
                             <p><span>Includes:</span>
-                                One Pound Each<br>
-                                of Brisket, Ribs and<br>
-                                Pulled Pork
+                                <?= get_field('pack_meats_includes1'); ?>
                             </p>
 
-                            <p class="orders__text--2">Includes a 12 Oz.<br>
-                                sides of Baked Beans<br>
-                                and Slaw, Pickles and Onions</p>
+                            <p class="orders__text--2"><?= get_field('pack_sides_includes1'); ?></p>
 
-                            <span class="orders__text-sp">$57</span>
+                            <span class="orders__text-sp"><?= get_field('pack_price1'); ?></span>
                         </div>
                     </div>
 
@@ -518,22 +540,17 @@ get_header();
                         <h2>FAMILY PACKS</h2>
 
                         <div class="pre-orders__title">
-                            <h3>Our BBQ TRIO</h3>
+                            <h3><?= get_field('pack_title2'); ?></h3>
                             <img src="<?php bloginfo('template_directory'); ?>/assets/img/order_6.png" alt="">
                         </div>
                         <div class="pre-orders__text orders__text">
                             <p><span>Includes:</span>
-                                Two Pound Each<br>
-                                of Brisket, Ribs and<br>
-                                Pulled Pork
+                                <?= get_field('pack_meats_includes2'); ?>
                             </p>
 
-                            <p class="orders__text--2">Includes 32 Ounce<br>
-                                Sides of Mac N’ Cheese, Baked<br>
-                                Beans and Slaw, Sauce,<br>
-                                Pickles and Onions</p>
+                            <p class="orders__text--2"><?= get_field('pack_sides_includes2'); ?></p>
 
-                            <span class="orders__text-sp">$125</span>
+                            <span class="orders__text-sp"><?= get_field('pack_price2'); ?></span>
                         </div>
                     </div>
                 </div>
@@ -541,12 +558,10 @@ get_header();
             <div class="pre-orders__right">
                 <div class="pre-orders__contacts">
                     <h2>Pre-orders</h2>
-                    <p class="pre-orders__contacts-text">We are creating something awesome for our<br>
-                        customers. In the meantime, please email, or<br>
-                        text your BBQ orders to the contacts below.</p>
-                    <p class="pre-orders__contacts-patronage">Thank You For Your Patronage!</p>
-                    <p class="pre-orders__contacts-info pre-orders__contacts-email">Timsbarbecue1@gmail.com</p>
-                    <p class="pre-orders__contacts-info pre-orders__contacts-phone"> 267-549-8150</p>
+                    <p class="pre-orders__contacts-text"><?= get_field('pre_order_description'); ?></p>
+                    <p class="pre-orders__contacts-patronage"><?= get_field('pre_order_thanks'); ?></p>
+                    <p class="pre-orders__contacts-info pre-orders__contacts-email"><?= get_field('email'); ?></p>
+                    <p class="pre-orders__contacts-info pre-orders__contacts-phone"><?= get_field('phone'); ?></p>
                     <button class="pre-orders__contacts-btn">Find us</button>
                 </div>
                 <div class="pre-orders__right-img"></div>

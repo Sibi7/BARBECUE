@@ -48,6 +48,7 @@
             rel="stylesheet"
             href="<?php bloginfo('template_directory'); ?>/assets/styles/style.css"
     />
+    <link href="<?php bloginfo('template_directory'); ?>/assets/styles/index.css" rel="stylesheet">
     <?php wp_head(); ?>
 </head>
 
@@ -63,11 +64,11 @@
                 <nav class="d-flex align-self-center h-ml-5 site-navbar">
                     <ul class="d-flex header__list">
                         <li class="header__item"><a href="/" class="header__item-link">home</a></li>
-                        <li class="header__item"><a href="./about_us.html" class="header__item-link">about us</a></li>
-                        <li class="header__item"><a href="./orders.html" class="header__item-link">reviews</a></li>
-                        <li class="header__item"><a href="./catering.html" class="header__item-link">catering</a></li>
-                        <li class="header__item"><a href="./find_us.html" class="header__item-link">find us</a></li>
-                        <li class="header__item"><a href="./products.html" class="header__item-link">contact</a></li>
+                        <li class="header__item"><a href="<?= get_site_url() ?>/about_us" class="header__item-link">about us</a></li>
+                        <li class="header__item"><a href="<?= get_site_url() ?>/orders.html" class="header__item-link">reviews</a></li>
+                        <li class="header__item"><a href="<?= get_site_url() ?>/catering.html" class="header__item-link">catering</a></li>
+                        <li class="header__item"><a href="<?= get_site_url() ?>/find-us" class="header__item-link">find us</a></li>
+                        <li class="header__item"><a href="<?= get_site_url() ?>/products.html" class="header__item-link">contact</a></li>
                     </ul>
 
                     <!-- nav-toggler for mobile version only -->
