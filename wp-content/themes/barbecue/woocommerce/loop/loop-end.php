@@ -20,3 +20,4 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 </ul>
+<script src="<?php bloginfo('template_directory'); ?>/assets/js/addToCart.js"></script>
