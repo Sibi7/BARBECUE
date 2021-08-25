@@ -45,7 +45,7 @@ defined('ABSPATH') || exit;
                     $items['id'] = array_values(array_map($get_id, $cart->get_cart()));
 
                     foreach (WC()->cart->get_cart() as $item) {
-                        echo wc_get_product_of_cart_html_by_cart_item_and_cart($item);
+                        echo wc_get_product_of_cart_html_by_cart_item($item);
 
                     }
 

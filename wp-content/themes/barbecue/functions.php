@@ -101,3 +101,67 @@ add_action( 'wp_enqueue_scripts', 'artcraft_scripts' );
  * Load custom functions
  */
 require get_template_directory() . '/includes/custom-functions.php';
+
+function wc_get_product_html_by_product(WC_Product_Simple $product, $class_name = ''){
+    $PRODUCT_IMAGE_URL = wp_get_attachment_image_url(( $product->get_image_id() ), 'full' );
+    return
+        '
+<div class="universal-card '.$class_name.'">
+    <h3 class="universal-card__title">'.$product->get_name().'</h3>
+    <div class="universal-card__content">
+        <div class="universal-card__content__wrapperImg">
+            <img src="'.$PRODUCT_IMAGE_URL.'" alt="content Card">
+        </div>
+        <div class="universal-card__content__mainInfo">
+            <p class="universal-card__content__mainInfo__title">'.$product->get_short_description().'</p>
+            <p class="universal-card__content__mainInfo__price">$'.$product->get_price().'</p>
+        </div>
+    </div>
+    '.wc_get_product_card_add_by_product($product).'
+</div>
+';
+}
+
+function wc_get_product_card_add_by_product($product){
+    return '
+    <div class="universal-card__add">
+        <button class="universal-card__add__button '.$product->get_id().'">Add to cart</button>
+        <input class="universal-card__add__input '.$product->get_id().'"  type="number" value="1">
+    </div>';
+}
+
+function wc_get_product_of_cart_html_by_cart_item($item){
+    $product = wc_get_product($item['product_id']);
+    $cart = WC()->cart;
+    $quantities = $cart->get_cart_item_quantities();
+    $product_image_url = wp_get_attachment_image_url(($product->get_image_id()), 'full');
+    return
+        '
+                     <tr class="table__tr">
+                        <td aria-label="" class="table__tr-delete">
+                            <a href="http://bbq.loc/cart/?remove_item='.$item['key'].'&_wpnonce=9a94f32c52" type="button" class="btn-delete"></a>
+                        </td>
+                        <td aria-label="Product" class="table__tr__product">
+                            <div class="d-flex align-items-center table__td-product">
+                                <div class="table__td-product-img">
+                                    <img src="' . $product_image_url . '" alt="">
+                                </div>
+                                <p class="table__td-product-label">' . $product->get_name() . '</p>
+                            </div>
+                        </td>
+                        <td aria-label="Price"
+                            class="universal-card__content__mainInfo__price whiteBanner_orders__content__card__content__mainInfo__price mediaTable">
+                            $' . $product->get_price() . '
+                        </td>
+                        <td aria-label="Quantity" class="table__td">
+                            <div class="universal-card__add">
+                                <input class="universal-card__add__input" type="number" value="' . $quantities[$product->get_id()] . '">
+                            </div>
+                        </td>
+                        <td aria-label="Subtotal"
+                            class="universal-card__content__mainInfo__price whiteBanner_orders__content__card__content__mainInfo__price mediaTd">
+                            $' . $product->get_price() * $quantities[$product->get_id()] . '
+                        </td>
+                    </tr>
+                    ';
+}
