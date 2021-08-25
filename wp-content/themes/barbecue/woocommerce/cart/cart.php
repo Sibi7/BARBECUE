@@ -38,15 +38,8 @@ defined('ABSPATH') || exit;
 
                     <?php
                     $cart = WC()->cart;
-
-                    $get_id = function ($arrayItem) {
-                        return $arrayItem['product_id'];
-                    };
-                    $items['id'] = array_values(array_map($get_id, $cart->get_cart()));
-
                     foreach (WC()->cart->get_cart() as $item) {
                         echo wc_get_product_of_cart_html_by_cart_item($item);
-
                     }
 
                     ?>
