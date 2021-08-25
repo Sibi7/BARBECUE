@@ -1,0 +1,44 @@
+2021-08-24T08:50:57+00:00 CRITICAL Uncaught Error: Call to undefined function get_file_description() in /var/www/bbq/wp-content/plugins/woocommerce/templates/content-single-product.php:38
+Stack trace:
+#0 /var/www/bbq/wp-includes/template.php(772): require()
+#1 /var/www/bbq/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template()
+#2 /var/www/bbq/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(598): wc_get_template_part()
+#3 /var/www/bbq/wp-includes/shortcodes.php(356): WC_Shortcodes::product_page()
+#4 [internal function]: do_shortcode_tag()
+#5 /var/www/bbq/wp-includes/shortcodes.php(228): preg_replace_callback()
+#6 /var/www/bbq/wp-content/plugins/woocommerce/includes/class-wc-template-loader.php(555): do_shortcode()
+#7 /var/www/bbq/wp-includes/class-wp-hook.php(303): WC_Template_Loader::unsupported_theme_product_content_filter()
+#8 /var/www/bbq/wp-includes/plugin.php(189): WP_Hook->apply_filters()
+#9 /var/www/bbq/wp-includes/post-template.php(253): apply_filters()
+#10 /var/www/bbq/wp-content/themes/bar in /var/www/bbq/wp-content/plugins/woocommerce/templates/content-single-product.php on line 38
+
+2021-08-24T08:51:29+00:00 CRITICAL Uncaught Error: Call to undefined function get_description() in /var/www/bbq/wp-content/plugins/woocommerce/templates/content-single-product.php:38
+Stack trace:
+#0 /var/www/bbq/wp-includes/template.php(772): require()
+#1 /var/www/bbq/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template()
+#2 /var/www/bbq/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(598): wc_get_template_part()
+#3 /var/www/bbq/wp-includes/shortcodes.php(356): WC_Shortcodes::product_page()
+#4 [internal function]: do_shortcode_tag()
+#5 /var/www/bbq/wp-includes/shortcodes.php(228): preg_replace_callback()
+#6 /var/www/bbq/wp-content/plugins/woocommerce/includes/class-wc-template-loader.php(555): do_shortcode()
+#7 /var/www/bbq/wp-includes/class-wp-hook.php(303): WC_Template_Loader::unsupported_theme_product_content_filter()
+#8 /var/www/bbq/wp-includes/plugin.php(189): WP_Hook->apply_filters()
+#9 /var/www/bbq/wp-includes/post-template.php(253): apply_filters()
+#10 /var/www/bbq/wp-content/themes/barbecue in /var/www/bbq/wp-content/plugins/woocommerce/templates/content-single-product.php on line 38
+
+2021-08-24T08:51:39+00:00 CRITICAL Uncaught Error: Call to undefined function get_description() in /var/www/bbq/wp-content/plugins/woocommerce/templates/content-single-product.php:38
+Stack trace:
+#0 /var/www/bbq/wp-includes/template.php(772): require()
+#1 /var/www/bbq/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template()
+#2 /var/www/bbq/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(598): wc_get_template_part()
+#3 /var/www/bbq/wp-includes/shortcodes.php(356): WC_Shortcodes::product_page()
+#4 [internal function]: do_shortcode_tag()
+#5 /var/www/bbq/wp-includes/shortcodes.php(228): preg_replace_callback()
+#6 /var/www/bbq/wp-content/plugins/woocommerce/includes/class-wc-template-loader.php(555): do_shortcode()
+#7 /var/www/bbq/wp-includes/class-wp-hook.php(303): WC_Template_Loader::unsupported_theme_product_content_filter()
+#8 /var/www/bbq/wp-includes/plugin.php(189): WP_Hook->apply_filters()
+#9 /var/www/bbq/wp-includes/post-template.php(253): apply_filters()
+#10 /var/www/bbq/wp-content/themes/barbecue in /var/www/bbq/wp-content/plugins/woocommerce/templates/content-single-product.php on line 38
+
+2021-08-24T09:19:26+00:00 CRITICAL syntax error, unexpected ';', expecting ')' in /var/www/bbq/wp-content/plugins/woocommerce/templates/content-single-product.php on line 22
+

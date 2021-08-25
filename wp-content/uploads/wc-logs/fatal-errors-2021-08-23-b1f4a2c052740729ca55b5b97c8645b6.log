@@ -1,0 +1,263 @@
+2021-08-23T07:19:38+00:00 CRITICAL syntax error, unexpected ')', expecting ';' or ',' in /var/www/bbq/wp-content/themes/barbecue/woocommerce/content-product.php on line 51
+
+2021-08-23T07:25:00+00:00 CRITICAL syntax error, unexpected 'global' (T_GLOBAL) in /var/www/bbq/wp-content/themes/barbecue/woocommerce/content-product.php on line 22
+
+2021-08-23T07:27:38+00:00 CRITICAL syntax error, unexpected 'throw' (T_THROW) in /var/www/bbq/wp-content/themes/barbecue/woocommerce/content-product.php on line 21
+
+2021-08-23T08:10:31+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Post as array in /var/www/bbq/wp-content/themes/barbecue/orders.php:34
+Stack trace:
+#0 /var/www/bbq/wp-includes/template-loader.php(106): include()
+#1 /var/www/bbq/wp-blog-header.php(19): require_once('/var/www/bbq/wp...')
+#2 /var/www/bbq/index.php(17): require('/var/www/bbq/wp...')
+#3 {main}
+  thrown in /var/www/bbq/wp-content/themes/barbecue/orders.php on line 34
+
+2021-08-23T08:10:54+00:00 CRITICAL Uncaught Error: Call to undefined method WP_Post::get_id() in /var/www/bbq/wp-content/themes/barbecue/orders.php:34
+Stack trace:
+#0 /var/www/bbq/wp-includes/template-loader.php(106): include()
+#1 /var/www/bbq/wp-blog-header.php(19): require_once('/var/www/bbq/wp...')
+#2 /var/www/bbq/index.php(17): require('/var/www/bbq/wp...')
+#3 {main}
+  thrown in /var/www/bbq/wp-content/themes/barbecue/orders.php on line 34
+
+2021-08-23T08:39:46+00:00 CRITICAL Uncaught Error: Call to a member function get_name() on array in /var/www/bbq/wp-content/plugins/woocommerce/includes/wc-template-functions.php:3845
+Stack trace:
+#0 /var/www/bbq/wp-content/themes/barbecue/orders.php(35): wc_get_product_html_by_product()
+#1 /var/www/bbq/wp-includes/template-loader.php(106): include('/var/www/bbq/wp...')
+#2 /var/www/bbq/wp-blog-header.php(19): require_once('/var/www/bbq/wp...')
+#3 /var/www/bbq/index.php(17): require('/var/www/bbq/wp...')
+#4 {main}
+  thrown in /var/www/bbq/wp-content/plugins/woocommerce/includes/wc-template-functions.php on line 3845
+
+2021-08-23T08:39:58+00:00 CRITICAL Uncaught Error: Call to undefined method WP_Post::get_name() in /var/www/bbq/wp-content/plugins/woocommerce/includes/wc-template-functions.php:3845
+Stack trace:
+#0 /var/www/bbq/wp-content/themes/barbecue/orders.php(35): wc_get_product_html_by_product()
+#1 /var/www/bbq/wp-includes/template-loader.php(106): include('/var/www/bbq/wp...')
+#2 /var/www/bbq/wp-blog-header.php(19): require_once('/var/www/bbq/wp...')
+#3 /var/www/bbq/index.php(17): require('/var/www/bbq/wp...')
+#4 {main}
+  thrown in /var/www/bbq/wp-content/plugins/woocommerce/includes/wc-template-functions.php on line 3845
+
+2021-08-23T08:40:10+00:00 CRITICAL Uncaught Error: Call to undefined method WP_Post::get_name() in /var/www/bbq/wp-content/plugins/woocommerce/includes/wc-template-functions.php:3845
+Stack trace:
+#0 /var/www/bbq/wp-content/themes/barbecue/orders.php(35): wc_get_product_html_by_product()
+#1 /var/www/bbq/wp-includes/template-loader.php(106): include('/var/www/bbq/wp...')
+#2 /var/www/bbq/wp-blog-header.php(19): require_once('/var/www/bbq/wp...')
+#3 /var/www/bbq/index.php(17): require('/var/www/bbq/wp...')
+#4 {main}
+  thrown in /var/www/bbq/wp-content/plugins/woocommerce/includes/wc-template-functions.php on line 3845
+
+2021-08-23T08:49:41+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on null in /var/www/bbq/wp-content/themes/barbecue/orders.php:21
+Stack trace:
+#0 /var/www/bbq/wp-includes/template-loader.php(106): include()
+#1 /var/www/bbq/wp-blog-header.php(19): require_once('/var/www/bbq/wp...')
+#2 /var/www/bbq/index.php(17): require('/var/www/bbq/wp...')
+#3 {main}
+  thrown in /var/www/bbq/wp-content/themes/barbecue/orders.php on line 21
+
+2021-08-23T08:57:35+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) in /var/www/bbq/wp-content/themes/barbecue/orders.php on line 40
+
+2021-08-23T09:02:21+00:00 CRITICAL syntax error, unexpected '}', expecting ';' or ',' in /var/www/bbq/wp-content/themes/barbecue/orders.php on line 39
+
+2021-08-23T09:14:58+00:00 CRITICAL Uncaught Exception: Not having img url of product in /var/www/bbq/wp-content/plugins/woocommerce/includes/wc-template-functions.php:3839
+Stack trace:
+#0 /var/www/bbq/wp-content/themes/barbecue/orders.php(33): wc_get_product_html_by_product()
+#1 /var/www/bbq/wp-includes/template-loader.php(106): include('/var/www/bbq/wp...')
+#2 /var/www/bbq/wp-blog-header.php(19): require_once('/var/www/bbq/wp...')
+#3 /var/www/bbq/index.php(17): require('/var/www/bbq/wp...')
+#4 {main}
+  thrown in /var/www/bbq/wp-content/plugins/woocommerce/includes/wc-template-functions.php on line 3839
+
+2021-08-23T09:15:05+00:00 CRITICAL Uncaught Exception: Not having img url of product in /var/www/bbq/wp-content/plugins/woocommerce/includes/wc-template-functions.php:3839
+Stack trace:
+#0 /var/www/bbq/wp-content/themes/barbecue/orders.php(33): wc_get_product_html_by_product()
+#1 /var/www/bbq/wp-includes/template-loader.php(106): include('/var/www/bbq/wp...')
+#2 /var/www/bbq/wp-blog-header.php(19): require_once('/var/www/bbq/wp...')
+#3 /var/www/bbq/index.php(17): require('/var/www/bbq/wp...')
+#4 {main}
+  thrown in /var/www/bbq/wp-content/plugins/woocommerce/includes/wc-template-functions.php on line 3839
+
+2021-08-23T09:39:02+00:00 CRITICAL Uncaught TypeError: Argument 1 passed to wc_get_product_html_by_product() must be an instance of WC_Product_Simple, bool given, called in /var/www/bbq/wp-content/themes/barbecue/orders.php on line 60 and defined in /var/www/bbq/wp-content/plugins/woocommerce/includes/wc-template-functions.php:3836
+Stack trace:
+#0 /var/www/bbq/wp-content/themes/barbecue/orders.php(60): wc_get_product_html_by_product()
+#1 /var/www/bbq/wp-includes/template-loader.php(106): include('/var/www/bbq/wp...')
+#2 /var/www/bbq/wp-blog-header.php(19): require_once('/var/www/bbq/wp...')
+#3 /var/www/bbq/index.php(17): require('/var/www/bbq/wp...')
+#4 {main}
+  thrown in /var/www/bbq/wp-content/plugins/woocommerce/includes/wc-template-functions.php on line 3836
+
+2021-08-23T09:39:36+00:00 CRITICAL Uncaught TypeError: Argument 1 passed to wc_get_product_html_by_product() must be an instance of WC_Product_Simple, bool given, called in /var/www/bbq/wp-content/themes/barbecue/orders.php on line 60 and defined in /var/www/bbq/wp-content/plugins/woocommerce/includes/wc-template-functions.php:3836
+Stack trace:
+#0 /var/www/bbq/wp-content/themes/barbecue/orders.php(60): wc_get_product_html_by_product()
+#1 /var/www/bbq/wp-includes/template-loader.php(106): include('/var/www/bbq/wp...')
+#2 /var/www/bbq/wp-blog-header.php(19): require_once('/var/www/bbq/wp...')
+#3 /var/www/bbq/index.php(17): require('/var/www/bbq/wp...')
+#4 {main}
+  thrown in /var/www/bbq/wp-content/plugins/woocommerce/includes/wc-template-functions.php on line 3836
+
+2021-08-23T09:39:51+00:00 CRITICAL Uncaught TypeError: Argument 1 passed to wc_get_product_html_by_product() must be an instance of WC_Product_Simple, bool given, called in /var/www/bbq/wp-content/themes/barbecue/orders.php on line 60 and defined in /var/www/bbq/wp-content/plugins/woocommerce/includes/wc-template-functions.php:3836
+Stack trace:
+#0 /var/www/bbq/wp-content/themes/barbecue/orders.php(60): wc_get_product_html_by_product()
+#1 /var/www/bbq/wp-includes/template-loader.php(106): include('/var/www/bbq/wp...')
+#2 /var/www/bbq/wp-blog-header.php(19): require_once('/var/www/bbq/wp...')
+#3 /var/www/bbq/index.php(17): require('/var/www/bbq/wp...')
+#4 {main}
+  thrown in /var/www/bbq/wp-content/plugins/woocommerce/includes/wc-template-functions.php on line 3836
+
+2021-08-23T09:39:54+00:00 CRITICAL Uncaught TypeError: Argument 1 passed to wc_get_product_html_by_product() must be an instance of WC_Product_Simple, bool given, called in /var/www/bbq/wp-content/themes/barbecue/orders.php on line 60 and defined in /var/www/bbq/wp-content/plugins/woocommerce/includes/wc-template-functions.php:3836
+Stack trace:
+#0 /var/www/bbq/wp-content/themes/barbecue/orders.php(60): wc_get_product_html_by_product()
+#1 /var/www/bbq/wp-includes/template-loader.php(106): include('/var/www/bbq/wp...')
+#2 /var/www/bbq/wp-blog-header.php(19): require_once('/var/www/bbq/wp...')
+#3 /var/www/bbq/index.php(17): require('/var/www/bbq/wp...')
+#4 {main}
+  thrown in /var/www/bbq/wp-content/plugins/woocommerce/includes/wc-template-functions.php on line 3836
+
+2021-08-23T09:40:00+00:00 CRITICAL Uncaught TypeError: Argument 1 passed to wc_get_product_html_by_product() must be an instance of WC_Product_Simple, bool given, called in /var/www/bbq/wp-content/themes/barbecue/orders.php on line 60 and defined in /var/www/bbq/wp-content/plugins/woocommerce/includes/wc-template-functions.php:3836
+Stack trace:
+#0 /var/www/bbq/wp-content/themes/barbecue/orders.php(60): wc_get_product_html_by_product()
+#1 /var/www/bbq/wp-includes/template-loader.php(106): include('/var/www/bbq/wp...')
+#2 /var/www/bbq/wp-blog-header.php(19): require_once('/var/www/bbq/wp...')
+#3 /var/www/bbq/index.php(17): require('/var/www/bbq/wp...')
+#4 {main}
+  thrown in /var/www/bbq/wp-content/plugins/woocommerce/includes/wc-template-functions.php on line 3836
+
+2021-08-23T09:40:04+00:00 CRITICAL Uncaught TypeError: Argument 1 passed to wc_get_product_html_by_product() must be an instance of WC_Product_Simple, bool given, called in /var/www/bbq/wp-content/themes/barbecue/orders.php on line 60 and defined in /var/www/bbq/wp-content/plugins/woocommerce/includes/wc-template-functions.php:3836
+Stack trace:
+#0 /var/www/bbq/wp-content/themes/barbecue/orders.php(60): wc_get_product_html_by_product()
+#1 /var/www/bbq/wp-includes/template-loader.php(106): include('/var/www/bbq/wp...')
+#2 /var/www/bbq/wp-blog-header.php(19): require_once('/var/www/bbq/wp...')
+#3 /var/www/bbq/index.php(17): require('/var/www/bbq/wp...')
+#4 {main}
+  thrown in /var/www/bbq/wp-content/plugins/woocommerce/includes/wc-template-functions.php on line 3836
+
+2021-08-23T09:40:31+00:00 CRITICAL Uncaught TypeError: Argument 1 passed to wc_get_product_html_by_product() must be an instance of WC_Product_Simple, bool given, called in /var/www/bbq/wp-content/themes/barbecue/orders.php on line 28 and defined in /var/www/bbq/wp-content/plugins/woocommerce/includes/wc-template-functions.php:3836
+Stack trace:
+#0 /var/www/bbq/wp-content/themes/barbecue/orders.php(28): wc_get_product_html_by_product()
+#1 /var/www/bbq/wp-includes/template-loader.php(106): include('/var/www/bbq/wp...')
+#2 /var/www/bbq/wp-blog-header.php(19): require_once('/var/www/bbq/wp...')
+#3 /var/www/bbq/index.php(17): require('/var/www/bbq/wp...')
+#4 {main}
+  thrown in /var/www/bbq/wp-content/plugins/woocommerce/includes/wc-template-functions.php on line 3836
+
+2021-08-23T09:42:00+00:00 CRITICAL Uncaught TypeError: Argument 1 passed to wc_get_product_html_by_product() must be an instance of WC_Product_Simple, bool given, called in /var/www/bbq/wp-content/themes/barbecue/orders.php on line 25 and defined in /var/www/bbq/wp-content/plugins/woocommerce/includes/wc-template-functions.php:3836
+Stack trace:
+#0 /var/www/bbq/wp-content/themes/barbecue/orders.php(25): wc_get_product_html_by_product()
+#1 /var/www/bbq/wp-includes/template-loader.php(106): include('/var/www/bbq/wp...')
+#2 /var/www/bbq/wp-blog-header.php(19): require_once('/var/www/bbq/wp...')
+#3 /var/www/bbq/index.php(17): require('/var/www/bbq/wp...')
+#4 {main}
+  thrown in /var/www/bbq/wp-content/plugins/woocommerce/includes/wc-template-functions.php on line 3836
+
+2021-08-23T09:42:10+00:00 CRITICAL Uncaught TypeError: Argument 1 passed to wc_get_product_html_by_product() must be an instance of WC_Product_Simple, bool given, called in /var/www/bbq/wp-content/themes/barbecue/orders.php on line 25 and defined in /var/www/bbq/wp-content/plugins/woocommerce/includes/wc-template-functions.php:3836
+Stack trace:
+#0 /var/www/bbq/wp-content/themes/barbecue/orders.php(25): wc_get_product_html_by_product()
+#1 /var/www/bbq/wp-includes/template-loader.php(106): include('/var/www/bbq/wp...')
+#2 /var/www/bbq/wp-blog-header.php(19): require_once('/var/www/bbq/wp...')
+#3 /var/www/bbq/index.php(17): require('/var/www/bbq/wp...')
+#4 {main}
+  thrown in /var/www/bbq/wp-content/plugins/woocommerce/includes/wc-template-functions.php on line 3836
+
+2021-08-23T09:42:37+00:00 CRITICAL Uncaught TypeError: Argument 1 passed to wc_get_product_html_by_product() must be an instance of WC_Product_Simple, bool given, called in /var/www/bbq/wp-content/themes/barbecue/orders.php on line 25 and defined in /var/www/bbq/wp-content/plugins/woocommerce/includes/wc-template-functions.php:3836
+Stack trace:
+#0 /var/www/bbq/wp-content/themes/barbecue/orders.php(25): wc_get_product_html_by_product()
+#1 /var/www/bbq/wp-includes/template-loader.php(106): include('/var/www/bbq/wp...')
+#2 /var/www/bbq/wp-blog-header.php(19): require_once('/var/www/bbq/wp...')
+#3 /var/www/bbq/index.php(17): require('/var/www/bbq/wp...')
+#4 {main}
+  thrown in /var/www/bbq/wp-content/plugins/woocommerce/includes/wc-template-functions.php on line 3836
+
+2021-08-23T09:42:40+00:00 CRITICAL Uncaught TypeError: Argument 1 passed to wc_get_product_html_by_product() must be an instance of WC_Product_Simple, bool given, called in /var/www/bbq/wp-content/themes/barbecue/orders.php on line 25 and defined in /var/www/bbq/wp-content/plugins/woocommerce/includes/wc-template-functions.php:3836
+Stack trace:
+#0 /var/www/bbq/wp-content/themes/barbecue/orders.php(25): wc_get_product_html_by_product()
+#1 /var/www/bbq/wp-includes/template-loader.php(106): include('/var/www/bbq/wp...')
+#2 /var/www/bbq/wp-blog-header.php(19): require_once('/var/www/bbq/wp...')
+#3 /var/www/bbq/index.php(17): require('/var/www/bbq/wp...')
+#4 {main}
+  thrown in /var/www/bbq/wp-content/plugins/woocommerce/includes/wc-template-functions.php on line 3836
+
+2021-08-23T09:42:52+00:00 CRITICAL Uncaught TypeError: Argument 1 passed to wc_get_product_html_by_product() must be an instance of WC_Product_Simple, bool given, called in /var/www/bbq/wp-content/themes/barbecue/orders.php on line 25 and defined in /var/www/bbq/wp-content/plugins/woocommerce/includes/wc-template-functions.php:3836
+Stack trace:
+#0 /var/www/bbq/wp-content/themes/barbecue/orders.php(25): wc_get_product_html_by_product()
+#1 /var/www/bbq/wp-includes/template-loader.php(106): include('/var/www/bbq/wp...')
+#2 /var/www/bbq/wp-blog-header.php(19): require_once('/var/www/bbq/wp...')
+#3 /var/www/bbq/index.php(17): require('/var/www/bbq/wp...')
+#4 {main}
+  thrown in /var/www/bbq/wp-content/plugins/woocommerce/includes/wc-template-functions.php on line 3836
+
+2021-08-23T09:43:12+00:00 CRITICAL Uncaught TypeError: Argument 1 passed to wc_get_product_html_by_product() must be an instance of WC_Product_Simple, bool given, called in /var/www/bbq/wp-content/themes/barbecue/orders.php on line 25 and defined in /var/www/bbq/wp-content/plugins/woocommerce/includes/wc-template-functions.php:3836
+Stack trace:
+#0 /var/www/bbq/wp-content/themes/barbecue/orders.php(25): wc_get_product_html_by_product()
+#1 /var/www/bbq/wp-includes/template-loader.php(106): include('/var/www/bbq/wp...')
+#2 /var/www/bbq/wp-blog-header.php(19): require_once('/var/www/bbq/wp...')
+#3 /var/www/bbq/index.php(17): require('/var/www/bbq/wp...')
+#4 {main}
+  thrown in /var/www/bbq/wp-content/plugins/woocommerce/includes/wc-template-functions.php on line 3836
+
+2021-08-23T09:43:24+00:00 CRITICAL Uncaught TypeError: Argument 1 passed to wc_get_product_html_by_product() must be an instance of WC_Product_Simple, bool given, called in /var/www/bbq/wp-content/themes/barbecue/orders.php on line 25 and defined in /var/www/bbq/wp-content/plugins/woocommerce/includes/wc-template-functions.php:3836
+Stack trace:
+#0 /var/www/bbq/wp-content/themes/barbecue/orders.php(25): wc_get_product_html_by_product()
+#1 /var/www/bbq/wp-includes/template-loader.php(106): include('/var/www/bbq/wp...')
+#2 /var/www/bbq/wp-blog-header.php(19): require_once('/var/www/bbq/wp...')
+#3 /var/www/bbq/index.php(17): require('/var/www/bbq/wp...')
+#4 {main}
+  thrown in /var/www/bbq/wp-content/plugins/woocommerce/includes/wc-template-functions.php on line 3836
+
+2021-08-23T09:43:46+00:00 CRITICAL Uncaught TypeError: Argument 1 passed to wc_get_product_html_by_product() must be an instance of WC_Product_Simple, bool given, called in /var/www/bbq/wp-content/themes/barbecue/orders.php on line 26 and defined in /var/www/bbq/wp-content/plugins/woocommerce/includes/wc-template-functions.php:3836
+Stack trace:
+#0 /var/www/bbq/wp-content/themes/barbecue/orders.php(26): wc_get_product_html_by_product()
+#1 /var/www/bbq/wp-includes/template-loader.php(106): include('/var/www/bbq/wp...')
+#2 /var/www/bbq/wp-blog-header.php(19): require_once('/var/www/bbq/wp...')
+#3 /var/www/bbq/index.php(17): require('/var/www/bbq/wp...')
+#4 {main}
+  thrown in /var/www/bbq/wp-content/plugins/woocommerce/includes/wc-template-functions.php on line 3836
+
+2021-08-23T09:44:16+00:00 CRITICAL Uncaught TypeError: Argument 1 passed to wc_get_product_html_by_product() must be an instance of WC_Product_Simple, bool given, called in /var/www/bbq/wp-content/themes/barbecue/orders.php on line 61 and defined in /var/www/bbq/wp-content/plugins/woocommerce/includes/wc-template-functions.php:3836
+Stack trace:
+#0 /var/www/bbq/wp-content/themes/barbecue/orders.php(61): wc_get_product_html_by_product()
+#1 /var/www/bbq/wp-includes/template-loader.php(106): include('/var/www/bbq/wp...')
+#2 /var/www/bbq/wp-blog-header.php(19): require_once('/var/www/bbq/wp...')
+#3 /var/www/bbq/index.php(17): require('/var/www/bbq/wp...')
+#4 {main}
+  thrown in /var/www/bbq/wp-content/plugins/woocommerce/includes/wc-template-functions.php on line 3836
+
+2021-08-23T09:44:22+00:00 CRITICAL Uncaught TypeError: Argument 1 passed to wc_get_product_html_by_product() must be an instance of WC_Product_Simple, bool given, called in /var/www/bbq/wp-content/themes/barbecue/orders.php on line 61 and defined in /var/www/bbq/wp-content/plugins/woocommerce/includes/wc-template-functions.php:3836
+Stack trace:
+#0 /var/www/bbq/wp-content/themes/barbecue/orders.php(61): wc_get_product_html_by_product()
+#1 /var/www/bbq/wp-includes/template-loader.php(106): include('/var/www/bbq/wp...')
+#2 /var/www/bbq/wp-blog-header.php(19): require_once('/var/www/bbq/wp...')
+#3 /var/www/bbq/index.php(17): require('/var/www/bbq/wp...')
+#4 {main}
+  thrown in /var/www/bbq/wp-content/plugins/woocommerce/includes/wc-template-functions.php on line 3836
+
+2021-08-23T09:45:50+00:00 CRITICAL syntax error, unexpected ')', expecting ';' or ',' in /var/www/bbq/wp-content/themes/barbecue/orders.php on line 66
+
+2021-08-23T09:45:59+00:00 CRITICAL Uncaught TypeError: Argument 1 passed to wc_get_product_html_by_product() must be an instance of WC_Product_Simple, instance of WP_Post given, called in /var/www/bbq/wp-content/themes/barbecue/orders.php on line 66 and defined in /var/www/bbq/wp-content/plugins/woocommerce/includes/wc-template-functions.php:3836
+Stack trace:
+#0 /var/www/bbq/wp-content/themes/barbecue/orders.php(66): wc_get_product_html_by_product()
+#1 /var/www/bbq/wp-includes/template-loader.php(106): include('/var/www/bbq/wp...')
+#2 /var/www/bbq/wp-blog-header.php(19): require_once('/var/www/bbq/wp...')
+#3 /var/www/bbq/index.php(17): require('/var/www/bbq/wp...')
+#4 {main}
+  thrown in /var/www/bbq/wp-content/plugins/woocommerce/includes/wc-template-functions.php on line 3836
+
+2021-08-23T09:46:16+00:00 CRITICAL Uncaught TypeError: Argument 1 passed to wc_get_product_html_by_product() must be an instance of WC_Product_Simple, instance of WP_Post given, called in /var/www/bbq/wp-content/themes/barbecue/orders.php on line 66 and defined in /var/www/bbq/wp-content/plugins/woocommerce/includes/wc-template-functions.php:3836
+Stack trace:
+#0 /var/www/bbq/wp-content/themes/barbecue/orders.php(66): wc_get_product_html_by_product()
+#1 /var/www/bbq/wp-includes/template-loader.php(106): include('/var/www/bbq/wp...')
+#2 /var/www/bbq/wp-blog-header.php(19): require_once('/var/www/bbq/wp...')
+#3 /var/www/bbq/index.php(17): require('/var/www/bbq/wp...')
+#4 {main}
+  thrown in /var/www/bbq/wp-content/plugins/woocommerce/includes/wc-template-functions.php on line 3836
+
+2021-08-23T09:48:01+00:00 CRITICAL Uncaught TypeError: Argument 1 passed to wc_get_product_html_by_product() must be an instance of WC_Product_Simple, instance of WP_Post given, called in /var/www/bbq/wp-content/themes/barbecue/orders.php on line 66 and defined in /var/www/bbq/wp-content/plugins/woocommerce/includes/wc-template-functions.php:3836
+Stack trace:
+#0 /var/www/bbq/wp-content/themes/barbecue/orders.php(66): wc_get_product_html_by_product()
+#1 /var/www/bbq/wp-includes/template-loader.php(106): include('/var/www/bbq/wp...')
+#2 /var/www/bbq/wp-blog-header.php(19): require_once('/var/www/bbq/wp...')
+#3 /var/www/bbq/index.php(17): require('/var/www/bbq/wp...')
+#4 {main}
+  thrown in /var/www/bbq/wp-content/plugins/woocommerce/includes/wc-template-functions.php on line 3836
+
+2021-08-23T11:13:23+00:00 CRITICAL syntax error, unexpected '">' (T_CONSTANT_ENCAPSED_STRING), expecting ';' in /var/www/bbq/wp-content/plugins/woocommerce/includes/wc-template-functions.php on line 3844
+
