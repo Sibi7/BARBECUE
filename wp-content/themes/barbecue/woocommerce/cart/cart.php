@@ -116,12 +116,3 @@ defined('ABSPATH') || exit;
 <?php
 get_footer();
 ?>
-<style>
-    .btn-delete {
-        background-image: url(<?php bloginfo('template_directory'); ?>/assets/img/remove.svg);
-    }
-
-    .county__items__cart__blackBlock__title:before {
-        background-image: url(<?php bloginfo('template_directory'); ?>/assets/img/treugol_red.svg);
-    }
-</style>
