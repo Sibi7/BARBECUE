@@ -107,7 +107,9 @@ function wc_get_product_html_by_product(WC_Product_Simple $product, $class_name 
     return
         '
 <div class="universal-card '.$class_name.'">
+<div style="height: 200px">
     <h3 class="universal-card__title">'.$product->get_name().'</h3>
+    </div>
     <div class="universal-card__content">
         <div class="universal-card__content__wrapperImg">
             <img src="'.$PRODUCT_IMAGE_URL.'" alt="content Card">

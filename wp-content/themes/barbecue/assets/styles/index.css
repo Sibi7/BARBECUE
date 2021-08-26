@@ -2570,7 +2570,8 @@ body {
 .blackBanner_orders {
   width: 100%;
   background-color: black;
-  max-height: 1093px;
+  /*max-height: 1093px;*/
+  padding-bottom: 60px;
   position: relative;
   margin-bottom: 240px; }
   @media (max-width: 850px) {
@@ -2612,6 +2613,7 @@ body {
         font-size: 35px; } }
   .orders-black__wrapper {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     width: 100%; }
     @media (max-width: 850px) {
@@ -2654,6 +2656,7 @@ body {
   position: relative; }
 
 .universal-card {
+  margin: 20px 20px 0 0;
   width: 100%;
   max-width: 469px;
   margin-bottom: 36px;
@@ -2664,7 +2667,7 @@ body {
   background-color: #fdfafa;
   z-index: 1;
   height: 100%;
-  max-height: 436px;
+  /*max-height: 436px;*/
   position: relative; }
   @media (max-width: 1200px) {
     .universal-card {
@@ -2817,6 +2820,7 @@ body {
       .whiteBanner_orders__title {
         font-size: 35px; } }
   .whiteBanner_orders__content {
+    flex-wrap: wrap;
     display: flex;
     width: 90%;
     justify-content: center; }
@@ -4203,4 +4207,5 @@ button.swiper-pagination-bullet {
   z-index: 0;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden; }
+
 
