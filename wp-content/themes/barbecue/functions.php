@@ -134,7 +134,6 @@ function wc_get_product_of_cart_html_by_cart_item($item){
     $product = wc_get_product($item['product_id']);
     $cart = WC()->cart;
     $quantities = $cart->get_cart_item_quantities();
-//    wc_get_cart_remove_url()
     $product_image_url = wp_get_attachment_image_url(($product->get_image_id()), 'full');
     return
         '
