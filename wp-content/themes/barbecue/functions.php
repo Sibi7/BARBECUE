@@ -130,6 +130,7 @@ function wc_get_product_card_add_by_product($product){
     </div>';
 }
 
+
 function wc_get_product_of_cart_html_by_cart_item($item){
     $product = wc_get_product($item['product_id']);
     $cart = WC()->cart;
@@ -164,4 +165,13 @@ function wc_get_product_of_cart_html_by_cart_item($item){
                         </td>
                     </tr>
                     ';
+}
+
+function wc_print_products_by_category($category){
+    $products = wc_get_products(array(
+        'category' => array($category),
+    ));
+    foreach ($products as $product) {
+        echo wc_get_product_html_by_product($product, 'positionCard');
+    }
 }
