@@ -134,12 +134,13 @@ function wc_get_product_of_cart_html_by_cart_item($item){
     $product = wc_get_product($item['product_id']);
     $cart = WC()->cart;
     $quantities = $cart->get_cart_item_quantities();
+//    wc_get_cart_remove_url()
     $product_image_url = wp_get_attachment_image_url(($product->get_image_id()), 'full');
     return
         '
                      <tr class="table__tr">
                         <td aria-label="" class="table__tr-delete">
-                            <a href="http://bbq.loc/cart/?remove_item='.$item['key'].'&_wpnonce=9a94f32c52" type="button" class="btn-delete"></a>
+                            <a href="'.wc_get_cart_remove_url($item['key']).'" type="button" class="btn-delete"></a>
                         </td>
                         <td aria-label="Product" class="table__tr__product">
                             <div class="d-flex align-items-center table__td-product">
