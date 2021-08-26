@@ -44,12 +44,17 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+<!--    <link-->
+<!--            rel="stylesheet"-->
+<!--            href="--><?php //bloginfo('template_directory'); ?><!--/assets/styles/style.css"-->
+<!--    />-->
+
+<!--    --><?php //wp_head(); ?>
     <link
             rel="stylesheet"
             href="<?php bloginfo('template_directory'); ?>/assets/styles/style.css"
     />
     <link href="<?php bloginfo('template_directory'); ?>/assets/styles/index.css" rel="stylesheet">
-    <?php wp_head(); ?>
 </head>
 
 <body>
