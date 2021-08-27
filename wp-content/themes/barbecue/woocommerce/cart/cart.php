@@ -18,34 +18,46 @@
 
 defined('ABSPATH') || exit;
 
-
 ?>
 <main>
     <section class="basket">
         <div class="container table-width">
             <div class="row">
-                <table class="basket-table">
-                    <thead>
-                    <tr>
-                        <th class="table__th table__th-delete"></th>
-                        <th class="table__th table__th-product">Product</th>
-                        <th class="table__th table__th-price">Price</th>
-                        <th class="table__th table__th-quantity">Quantity</th>
-                        <th class="table__th table__th-price">Subtotal</th>
-                    </tr>
-                    </thead>
-                    <tbody>
+                <form method="post">
+                    <table class="basket-table">
+                        <thead>
+                        <tr>
+                            <th class="table__th table__th-delete"></th>
+                            <th class="table__th table__th-product">Product</th>
+                            <th class="table__th table__th-price">Price</th>
+                            <th class="table__th table__th-quantity">Quantity</th>
+                            <th class="table__th table__th-price">Subtotal</th>
+                        </tr>
+                        </thead>
+                        <tbody>
 
-                    <?php
-                    $cart = WC()->cart;
-                    foreach (WC()->cart->get_cart() as $item) {
-                        echo wc_get_product_of_cart_html_by_cart_item($item);
-                    }
+                        <?php
+                        $cart = WC()->cart;
+                        $products = $cart->get_cart();
+                        foreach ($products as $product) {
+                            echo wc_get_product_of_cart_html_by_cart_item($product);
+                        }
+                        ?>
 
-                    ?>
+                        </tbody>
+                    </table>
+                    <input type="hidden" name="coupon_code" value="">
+                    <input type="hidden" name="update_cart" value="Update cart">
 
-                    </tbody>
-                </table>
+
+                    <input type="hidden" name="woocommerce-cart-nonce"
+
+                           value="<?php echo wp_create_nonce('woocommerce-cart'); ?>">
+                    <input type="hidden" name="_wp_http_referer" value="/cart/">
+                    <div style="display: flex; justify-content: flex-end;">
+                        <button class="basket-btn">update cart</button>
+                    </div>
+                </form>
             </div>
         </div>
     </section>

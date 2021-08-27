@@ -4208,4 +4208,14 @@ button.swiper-pagination-bullet {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden; }
 
-
+.basket-btn {
+  width: 210px;
+  height: 60px;
+  margin-top: 40px;
+  margin-right: -10px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: 'Roboto Slab', sans-serif;
+  text-transform: uppercase;
+}

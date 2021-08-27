@@ -159,7 +159,7 @@ function wc_get_product_of_cart_html_by_cart_item($item){
                         </td>
                         <td aria-label="Quantity" class="table__td">
                             <div class="universal-card__add">
-                                <input class="universal-card__add__input" type="number" value="' . $quantities[$product->get_id()] . '">
+                                <input class="universal-card__add__input" type="number" name="cart['.$item['key'].'][qty]" value="' . $quantities[$product->get_id()] . '">
                             </div>
                         </td>
                         <td aria-label="Subtotal"
