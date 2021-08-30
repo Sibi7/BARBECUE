@@ -1312,14 +1312,16 @@ body {
           padding-left: 23px;
           text-align: left; } }
   .header__inform {
-    padding: 0 0 0 203px; }
+    /*padding: 0 0 0 203px; */
+  }
     @media screen and (max-width: 1200px) {
       .header__inform {
         padding: 0; } }
   .header__rectangle {
     position: relative;
     min-height: 555px;
-    height: 100%; }
+    /*height: 100%; */
+  }
     @media screen and (max-width: 575.98px) {
       .header__rectangle {
         min-height: 510px; } }
@@ -4218,4 +4220,7 @@ button.swiper-pagination-bullet {
   font-size: 18px;
   font-family: 'Roboto Slab', sans-serif;
   text-transform: uppercase;
+}
+.basket{
+  margin-top: 115px;
 }

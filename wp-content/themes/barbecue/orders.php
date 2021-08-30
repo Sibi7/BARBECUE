@@ -8,6 +8,17 @@ get_header();
 
 ?>
 <main>
+    <section>
+        <div class="container-fluid header__inform container media768px_width">
+            <div class="header__rectangle header__rectangle-main">
+                <h2 class="header__rectangle-title header__rectangle-title-main slash slash-main">We Take Great Pride in
+                    Providing Only The Best Meats Available</h2>
+                <p class="header__rectangle-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, s
+                    ed do eiusmod tempor incididunt ut labore et dolore ma
+                    gna aliqua. Ut enim ad minim veniam, qu</p>
+            </div>
+        </div>
+    </section>
     <p class="catering__separator uppercase">We Can Serve 40 to 1000 Guests! We Can Serve 40 to 1000 Guests! We Can
         Serve 40 to 1000 Guests!</p>
     <section class="blackBanner_orders ">
