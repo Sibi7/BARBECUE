@@ -23,7 +23,10 @@ defined('ABSPATH') || exit;
     <section class="basket">
         <div class="container table-width">
             <div class="row">
-                <form method="post">
+                <form method="post" style="
+    display: flex;
+    flex-direction: column;
+">
                     <table class="basket-table">
                         <thead>
                         <tr>
