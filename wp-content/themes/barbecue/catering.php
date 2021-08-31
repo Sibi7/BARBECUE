@@ -11,11 +11,8 @@ get_header();
         <section>
             <div class="container-fluid header__inform container media768px_width">
                 <div class="header__rectangle header__rectangle-main">
-                    <h2 class="header__rectangle-title header__rectangle-title-main slash slash-main">We Take Great Pride in
-                        Providing Only The Best Meats Available</h2>
-                    <p class="header__rectangle-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, s
-                        ed do eiusmod tempor incididunt ut labore et dolore ma
-                        gna aliqua. Ut enim ad minim veniam, qu</p>
+                    <h2 class="header__rectangle-title header__rectangle-title-main slash slash-main"><?=get_field('header__title')?></h2>
+                    <p class="header__rectangle-description"><?=get_field('header__content')?></p>
                 </div>
             </div>
         </section>
